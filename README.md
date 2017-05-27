@@ -42,6 +42,13 @@ It is fine for the files produced to be named just with the
 current timestamp in milliseconds or a running number (i.e.
 1.txt, 2.txt, 3.txt, and so on).
 
+Checklist:
+
+1. Read messages on port 9000, one per line
+2. For each thousand messages: Aggregate the above mentioned metrics
+   in a CSV file
+
+
 ## Running the producer
 
 The producer needs Oracle Java 8.
