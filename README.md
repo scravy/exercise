@@ -48,6 +48,10 @@ Checklist:
 2. For each thousand messages: Aggregate the above mentioned metrics
    in a CSV file
 
+Hand in the results with a README instructing how to compile
+and run your code as a ZIP or TAR.GZ file, or send the link
+to a git repository.
+
 
 ## Running the producer
 
