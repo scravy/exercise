@@ -5,7 +5,8 @@ Your task is to write a small service that receives and analyzes
 CSV data in real time.
 
 You are free to do this exercise in any programming language /
-on any platform you see fit (Java, Scala, Python, Node, Haskell, go crazy).
+on any platform you see fit (Java, Scala, Python, Node, C, Haskell,
+Rust, go crazy).
 
 The service is supposed to listen on port 9000, you are free to
 choose either TCP or UDP (for simplicity). Data comes in as CSV,
@@ -43,6 +44,10 @@ the average value and the most recent value as defined above.
 It is fine for the files produced to be named just with the
 current timestamp in milliseconds or a running number (i.e.
 `1.txt`, `2.txt`, `3.txt`, and so on).
+
+The service is supposed to run until it is interrupted (e.g.
+by issuing `Ctrl+C` or killing it).
+
 
 ### Example
 
@@ -94,7 +99,7 @@ and run your code as a ZIP or TAR.GZ file, or send the link
 to a git repository.
 
 
-## Running the producer
+### Running the producer
 
 The producer needs Oracle Java 8.
 
@@ -124,3 +129,5 @@ You will see messages coming in which look like that:
 f76b9ef2-0054-3e6a-8e9c-ace15bcde68b,P/wNtfFfa8jIn0OyeiS1tFvpORc=,0.8851653165728414,1163597258,8294506528003481004
 26c0dd58-b646-3c02-95c5-ebafee5e0f10,Aizem/PgVMKsulLGquCAsLj674U=,0.5869654624020274,1012454779,2450005343631151248
 ```
+
+You can abort both processes with `Ctrl+C`.
