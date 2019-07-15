@@ -5,8 +5,8 @@ Your task is to write a small service that receives and analyzes
 CSV data in real time.
 
 You are free to do this exercise in any programming language /
-on any platform you see fit (Java, Scala, Python, Node, C, Haskell,
-Rust, go crazy).
+on any platform you see fit.
+Note, however, that we prefer a solution using a JVM compatible language such as Java or Scala.
 
 The service is supposed to listen on port 9000, you are free to
 choose either TCP or UDP (for simplicity). Data comes in as CSV,
@@ -90,6 +90,7 @@ Expected output:
 2. For each thousand messages: Aggregate the above mentioned metrics
    in a CSV file
 3. Test your service with the producer (see below)
+4. Additionally implement automated tests
 
 
 ### Handing in the results
